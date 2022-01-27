@@ -36,4 +36,11 @@ public class RomanNumeralTestWithBeforeEach {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
+
+    @Test
+    public void longNumber() {
+        int result = roman.convert("MCMXCVIII");
+        Assertions.assertEquals(1998, result);
+    }
+
 }

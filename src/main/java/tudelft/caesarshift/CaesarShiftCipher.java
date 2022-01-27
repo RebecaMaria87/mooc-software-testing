@@ -12,8 +12,7 @@ public class CaesarShiftCipher {
         for(int i = 0; i < length; i++){
             currentChar = message.charAt(i);
            
-            sb.append(currentChar);
-            if (currentChar > 'z' || currentChar < 'a') {
+              if (currentChar > 'z' || currentChar < 'a') {
                 return "invalid";
             } else if ((char) (currentChar + shift) > 'z') {
                 currentChar = (char) (currentChar - 26);
